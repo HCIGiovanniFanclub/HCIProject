@@ -61,4 +61,8 @@ def rule7():
 @views.route('/rule8')
 def rule8():
     return render_template('rule8.html', user=current_user)
+
+@views.route('/glossary')
+def glossary():
+    return render_template('glossary.html', user=current_user)
     
