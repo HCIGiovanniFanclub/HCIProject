@@ -1,5 +1,78 @@
 {% extends "base.html"%} {% block title %} Home {% endblock %} {%block content
 %}
-<h1>This is the home page</h1>
-<a href="/glossary" class="btn btn-primary">Rules</a>
+<link
+  rel="stylesheet"
+  type="text/css"
+  href="{{ url_for('static', filename='style.css')}}"
+/>
+<!--top section-->
+<section id="hero">
+  <div class="homecontainer">
+    <div>
+      <h1>Hello, <span></span></h1>
+      <h1>Let's learn about<span></span></h1>
+      <h1>Design<span></span></h1>
+      <a href="#" type="button" class="cta">Get Started</a>
+    </div>
+  </div>
+</section>
+<!--end top-->
+
+<section id="glossary">
+  <div class="glossary homecontainer">
+    <div class="glossary-top">
+      <h1 class="glossary-title">G<span>l</span>ossary</h1>
+    </div>
+    <div class="glossary-bottom">
+      <div class="glossary-item">
+        <div class="icon"><img src="../static/1.png" /></div>
+        <h3>Rule 1</h3>
+      </div>
+    </div>
+    <div class="glossary-bottom">
+      <div class="glossary-item">
+        <div class="icon"><img src="../static/2.png" /></div>
+        <h3>Rule 2</h3>
+      </div>
+    </div>
+    <div class="glossary-bottom">
+      <div class="glossary-item">
+        <div class="icon"><img src="../static/3.png" /></div>
+        <h3>Rule 3</h3>
+      </div>
+    </div>
+    <div class="glossary-bottom">
+      <div class="glossary-item">
+        <div class="icon"><img src="../static/4.png" /></div>
+        <h3>Rule 4</h3>
+      </div>
+    </div>
+    <div class="glossary-bottom">
+      <div class="glossary-item">
+        <div class="icon"><img src="../static/5.png" /></div>
+        <h3>Rule 5</h3>
+      </div>
+    </div>
+    <div class="glossary-bottom">
+      <div class="glossary-item">
+        <div class="icon"><img src="../static/6.png" /></div>
+        <h3>Rule 6</h3>
+      </div>
+    </div>
+    <div class="glossary-bottom">
+      <div class="glossary-item">
+        <div class="icon"><img src="../static/7.png" /></div>
+        <h3>Rule 7</h3>
+      </div>
+    </div>
+    <div class="glossary-bottom">
+      <div class="glossary-item">
+        <div class="icon"><img src="../static/8.png" /></div>
+        <h3>Rule 8</h3>
+      </div>
+    </div>
+  </div>
+</section>
+<div class="pb-5"></div>
+
 {% endblock%}
