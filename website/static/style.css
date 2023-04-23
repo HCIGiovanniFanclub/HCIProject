@@ -8,11 +8,19 @@ html {
   font-size: 14px;
   font-family: "Montserrat", sans-serif;
 }
+.footer {
+  bottom: 0;
+  left: 0;
+  position: fixed;
+  right: 0;
+  text-align: center;
+}
 a {
   text-decoration: none;
 }
+
 .homecontainer {
-  min-height: 75vh;
+  min-height: 65vh;
   width: 100%;
   display: flex;
   align-items: center;
@@ -124,6 +132,27 @@ a {
 #glossary .glossary-title span {
   color: orange;
 }
+#glossary .glossary-bottom {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+#glossary .glossary-item {
+  flex-basis: 80%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  flex: basis 100%;
+  flex: 1;
+  padding: 15px;
+  border-radius: 15px;
+  background-image: url(./rule-box.png);
+  background-size: cover;
+  margin: 10px 5%;
+}
+
 /* end glossary */
 
 /* keyframes section */
