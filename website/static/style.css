@@ -21,11 +21,17 @@ a {
 
 .homecontainer {
   min-height: 65vh;
-  width: 100%;
+  width: 80%;
   display: flex;
   align-items: center;
   justify-content: center;
 }
+/*.glossarycontainer {
+  width: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}*/
 /*hero section*/
 #hero {
   background-image: url(./1218911.jpg);
@@ -118,7 +124,7 @@ a {
   text-align: center;
   max-width: 1500px;
   margin: 0 auto;
-  padding: 190px 0;
+  padding: 100px 0;
 }
 #glossary .glossary-title {
   font-size: 4rem;
@@ -130,7 +136,16 @@ a {
   text-align: center;
 }
 #glossary .glossary-title span {
-  color: orange;
+  color: rgb(230, 151, 5);
+}
+
+#glossary .glossary-top p {
+  color: rgb(25, 16, 1);
+  font-size: 1.4rem;
+  margin-top: 5px;
+  line-height: 2.5rem;
+  font-weight: 300px;
+  letter-spacing: 0.05rem;
 }
 #glossary .glossary-bottom {
   display: flex;
@@ -141,16 +156,19 @@ a {
 #glossary .glossary-item {
   flex-basis: 80%;
   display: flex;
-  align-items: flex-start;
+  align-items: center;
   justify-content: center;
   flex-direction: column;
   flex: basis 100%;
   flex: 1;
-  padding: 15px;
-  border-radius: 15px;
+  padding: 10px;
+  border-radius: 10px;
   background-image: url(./rule-box.png);
   background-size: cover;
-  margin: 10px 5%;
+  margin: 10px 4%;
+}
+#glossary .glossary-item span {
+  color: rgb(230, 151, 5);
 }
 
 /* end glossary */
