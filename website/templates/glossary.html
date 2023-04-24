@@ -2,75 +2,67 @@
 content %}
 
 <section id="glossary">
-  <div class="glossary homecontainer">
+  <div class="glossarycontainer">
     <div class="glossary-top">
-      <h1 class="glossary-title"><span>G</span>lossary</h1>
-      <p>
-        These are Ben Schinederman's eight golden rules of website design. Click
-        on any rule to go to its page.
-      </p>
+      <div>
+        <h1 class="glossary-title"><span>G</span>lossary</h1>
+        <p>
+          These are Ben Schinederman's eight golden rules of website design.
+          Click on any rule to go to its page.
+        </p>
+      </div>
     </div>
     <div class="glossary-bottom">
       <div class="glossary-item">
-        <div class="icon"><img src="../static/1.png" /></div>
-
-        <h3>Rule 1</h3>
-        <p>Simple overview of the rule here.</p>
+        <div class="icon" onclick="location.href='/rule1'">
+          <img src="../static/1.png" />
+          <p>Consistency</p>
+        </div>
       </div>
       <div class="glossary-item">
-        <div class="icon"><img src="../static/2.png" /></div>
-
-        <h3>Rule 2</h3>
-        <p>Simple overview of the rule here.</p>
+        <div class="icon" onclick="location.href='/rule2'">
+          <img src="../static/2.png" />
+          <p>Shortcuts</p>
+        </div>
       </div>
       <div class="glossary-item">
-        <div class="icon"><img src="../static/3.png" /></div>
-
-        <h3>Rule 3</h3>
-        <p>Simple overview of the rule here.</p>
+        <div class="icon" onclick="location.href='/rule3'">
+          <img src="../static/3.png" />
+          <p>Feedback</p>
+        </div>
       </div>
       <div class="glossary-item">
-        <div class="icon"><img src="../static/4.png" /></div>
-
-        <h3>Rule 4</h3>
-        <p>Simple overview of the rule here.</p>
+        <div class="icon" onclick="location.href='/rule4'">
+          <img src="../static/4.png" />
+          <p>Closure</p>
+        </div>
       </div>
       <div class="glossary-item">
-        <div class="icon"><img src="../static/5.png" /></div>
-
-        <h3>Rule 5</h3>
-        <p>Simple overview of the rule here.</p>
+        <div class="icon" onclick="location.href='/rule5'">
+          <img src="../static/5.png" />
+          <p>Error-Handling</p>
+        </div>
       </div>
       <div class="glossary-item">
-        <div class="icon"><img src="../static/6.png" /></div>
-
-        <h3>Rule 6</h3>
-        <p>Simple overview of the rule here.</p>
+        <div class="icon" onclick="location.href='/rule6'">
+          <img src="../static/6.png" />
+          <p>Reversal</p>
+        </div>
       </div>
       <div class="glossary-item">
-        <div class="icon"><img src="../static/7.png" /></div>
-
-        <h3>Rule 7</h3>
-        <p>Simple overview of the rule here.</p>
+        <div class="icon" onclick="location.href='/rule7'">
+          <img src="../static/7.png" />
+          <p>Control</p>
+        </div>
       </div>
       <div class="glossary-item">
-        <div class="icon"><img src="../static/8.png" /></div>
-
-        <h3>Rule 8</h3>
-        <p>Simple overview of the rule here.</p>
+        <div class="icon" onclick="location.href='/rule8'">
+          <img src="../static/8.png" />
+          <p>Memory Load</p>
+        </div>
       </div>
     </div>
   </div>
 </section>
 
-<style>
-  footer {
-    bottom: 0;
-    left: 0;
-    position: fixed;
-    right: 0;
-    text-align: center;
-  }
-</style>
-
-<footer>{% endblock%}</footer>
+{% endblock%}
