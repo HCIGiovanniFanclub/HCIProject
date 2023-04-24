@@ -19,7 +19,7 @@ body {
 }
 
 #footer {
-margin-top: auto;
+  margin-top: auto;
 }
 
 a {
@@ -27,24 +27,25 @@ a {
 }
 
 .homecontainer {
-  min-height: 55vh;
-  width: 80%;
+  min-height: 75vh;
+  width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-/*.glossarycontainer {
-  width: 80%;
+.glossarycontainer {
+  min-height: 55vh;
+  width: 90%;
   display: flex;
-  align-items: center;
+  align-items: top center;
   justify-content: center;
-}*/
+}
 /*hero section*/
 #hero {
   background-image: url(./1218911.jpg);
   background-size: cover;
-  background-position: top center;
+  background-position: center;
   position: relative;
   z-index: 1;
 }
@@ -128,9 +129,8 @@ a {
 #glossary {
 }
 #glossary .glossary {
-  flex-direction: column;
+  flex-direction: row;
   text-align: center;
-  max-width: 1500px;
   margin: 0 auto;
   padding: 100px 0;
 }
@@ -141,10 +141,16 @@ a {
   margin-bottom: 10px;
   text-transform: uppercase;
   letter-spacing: 0.2rem;
-  text-align: center;
+  text-align: left;
 }
 #glossary .glossary-title span {
   color: rgb(230, 151, 5);
+}
+#glossary .glossary-top {
+  display: flex;
+  align-items: center;
+  justify-content: top center;
+  flex-wrap: wrap;
 }
 
 #glossary .glossary-top p {
@@ -162,12 +168,12 @@ a {
   flex-wrap: wrap;
 }
 #glossary .glossary-item {
-  flex-basis: 80%;
+  flex-basis: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
-  flex-direction: column;
-  flex: basis 100%;
+  flex-direction: row;
+  flex: basis 80%;
   flex: 1;
   padding: 10px;
   border-radius: 10px;
@@ -175,6 +181,7 @@ a {
   background-size: cover;
   margin: 10px 4%;
 }
+
 #glossary .glossary-item span {
   color: rgb(230, 151, 5);
 }
