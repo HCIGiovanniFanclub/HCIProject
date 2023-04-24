@@ -34,10 +34,6 @@ def secret():
 def rule1():
     return render_template('rule1.html', user=current_user)
 
-@views.route('/rule1bad')
-def rule1bad():
-    return render_template('rule1bad.html', user=current_user)
-
 @views.route('/rule2')
 def rule2():
     return render_template('rule2.html', user=current_user)
@@ -69,4 +65,37 @@ def rule8():
 @views.route('/glossary')
 def glossary():
     return render_template('glossary.html', user=current_user)
+
+@views.route('/rule1bad')
+def rule1bad():
+    return render_template('rule1bad.html', user=current_user)
+
+@views.route('/rule2bad')
+def rule2bad():
+    return render_template('rule2bad.html', user=current_user)
+
+@views.route('/rule3bad')
+def rule3bad():
+    return render_template('rule3bad.html', user=current_user)
+
+@views.route('/rule4bad')
+def rule4bad():
+    return render_template('rule4bad.html', user=current_user)
+
+@views.route('/rule5bad')
+def rule5bad():
+    return render_template('rule5bad.html', user=current_user)
+
+@views.route('/rule6bad')
+def rule6bad():
+    return render_template('rule6bad.html', user=current_user)
+   
+@views.route('/rule7bad')
+def rule7bad():
+    return render_template('rule7bad.html', user=current_user)
+
+@views.route('/rule8bad')
+def rule8bad():
+    return render_template('rule8bad.html', user=current_user)
+
     
