@@ -14,7 +14,8 @@
       href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type = "text/css" href = "{{ url_for('static', filename='style.css')}}"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css"/>
     <title>{% block title %} Home {% endblock %}</title>
   </head>
   <body class="body" style="background-color: #98C1D9;">
@@ -95,8 +96,9 @@
       crossorigin="anonymous"
     ></script>
   </div>
+  <section id="footer">
       <!-- Footer -->
-  <footer class="text-center text-white sticky-bottom" style="background-color:#212834;">
+  <footer class="text-center text-white" style="background-color:#212834;">
     <!-- Grid container -->
     <div class="container">
       <!-- Section: Links -->
@@ -201,6 +203,7 @@
     </div>
     <!-- Copyright -->
   </footer>
+</section>
   <!-- Footer -->
   </body>
 </html>

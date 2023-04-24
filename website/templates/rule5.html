@@ -1,22 +1,28 @@
 {% extends "base.html"%} {% block title %} Rule 5 {% endblock %} {%block content
 %}
-<h1>
-  Offer simple error handling. No one likes to be told they’re wrong, especially
+<h2 align="center">Rule 5: Offer Simple Error Handling</h2>
+<hr
+  style = "
+  border:none;
+  color:rgb(1, 1, 26);
+  background-color:rgb(11, 1, 52);
+  color:rgb(3, 41, 56); 
+  height:10px; 
+  width:device-width;
+  
+
+  "
+>
+<p align="left" style="font-size:x-large;width:1200px;height:250px;margin-top:50px">
+  <img src="../assets/CE0060b.png" alt="testing" style="float:left;width:250px;height:250px;margin-right:250px;">
+  No one likes to be told they’re wrong, especially
   your users. Systems should be designed to be as fool-proof as possible, but
   when unavoidable errors occur, ensure users are provided with simple,
   intuitive step-by-step instructions to solve the problem as quickly and
   painlessly as possible. For example, flag the text fields where the users
   forgot to provide input in an online form.
-</h1>
+</p>
 <a href="/rule4" class="btn btn-primary">Previous Rule</a>
 <a href="/rule6" class="btn btn-primary">Next Rule</a>
 
-<style>footer{
-  bottom: 0;
-  left: 0;
-  position: fixed;
-  right: 0;
-  text-align: center;
-}</style>
-
-<footer>{% endblock%}</footer>
+{% endblock%}
