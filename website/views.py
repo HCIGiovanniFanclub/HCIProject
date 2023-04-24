@@ -34,6 +34,10 @@ def secret():
 def rule1():
     return render_template('rule1.html', user=current_user)
 
+@views.route('/rule1bad')
+def rule1bad():
+    return render_template('rule1bad.html', user=current_user)
+
 @views.route('/rule2')
 def rule2():
     return render_template('rule2.html', user=current_user)
