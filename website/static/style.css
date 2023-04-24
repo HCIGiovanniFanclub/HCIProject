@@ -128,6 +128,7 @@ a {
 /* glossary section */
 #glossary {
 }
+
 #glossary .glossary {
   flex-direction: row;
   text-align: center;
@@ -173,13 +174,13 @@ a {
   align-items: center;
   justify-content: center;
   flex-direction: row;
-  flex: basis 80%;
+  flex: basis 100%;
   flex: 1;
   padding: 10px;
   border-radius: 10px;
   background-image: url(./rule-box.png);
   background-size: cover;
-  margin: 10px 4%;
+  margin: 10px 5%;
 }
 
 #glossary .glossary-item span {
