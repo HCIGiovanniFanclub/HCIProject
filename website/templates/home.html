@@ -1,5 +1,32 @@
 {% extends "base.html"%} {% block title %} Home {% endblock %} {%block content
 %}
-<h1>This is the home page</h1>
-<a href="/glossary" class="btn btn-primary">Rules</a>
-{% endblock%}
+<link
+  rel="stylesheet"
+  type="text/css"
+  href="{{ url_for('static', filename='style.css')}}"
+/>
+<!--top section-->
+<section id="hero">
+  <div class="homecontainer">
+    <div>
+      <h1>Hello, <span></span></h1>
+      <h1>Let's learn about<span></span></h1>
+      <h1>Design<span></span></h1>
+      <a href="/glossary" type="button" class="cta">Get Started</a>
+    </div>
+  </div>
+</section>
+<!--end top-->
+
+<div class="pb-5"></div>
+<style>
+  footer {
+    bottom: 0;
+    left: 0;
+    position: fixed;
+    right: 0;
+    text-align: center;
+  }
+</style>
+
+<footer>{% endblock%}</footer>
