@@ -463,7 +463,7 @@ ul {
   position:relative;
 }
 
-.login-dark::after {
+.login-dark .after {
   content: "";
   position: absolute;
   left: 0;
