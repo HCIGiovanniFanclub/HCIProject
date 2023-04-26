@@ -1,6 +1,52 @@
 {% extends "base.html"%} {% block title %} Quiz {% endblock %} {%block content
 %}
-<h1>This is where the quiz will go</h1>
+<link
+  rel="stylesheet"
+  type="text/css"
+  href="{{ url_for('static', filename='quiz.css')}}"
+/>
+<div id="container">
+  <div id="game" class="justify-center flex-column">
+    <div id="hud">
+        <div id="huditem">
+            <p id ="progresstext" class="hudprefix">
+                Question
+            </p>
+            <div id="progressbar">
+                <div id="progressbarfull">
 
+                </div>
+            </div>
+            </h1>
+        </div>
+        <div id="huditem">
+            <p class="hudprefix">
+                Score
+            </p>
+            <h1 class="hudmaintext" id="score">
+                0
+            </h1>
+        </div>
+    </div>
+    <h2 id="question">What is the answer to this quesiton?</h2>
+    <div class="choicecontainer">
+      <p class="choiceprefix">A</p>
+      <p class="choicetext" data-number="1">Choice 1</p>
+    </div>
+    <div class="choicecontainer">
+      <p class="choiceprefix">B</p>
+      <p class="choicetext" data-number="2">Choice 2</p>
+    </div>
+    <div class="choicecontainer">
+      <p class="choiceprefix">C</p>
+      <p class="choicetext" data-number="3">Choice 3</p>
+    </div>
+    <div class="choicecontainer">
+      <p class="choiceprefix">D</p>
+      <p class="choicetext" data-number="4">Choice 4</p>
+    </div>
+  </div>
+</div>
+<script src = "../static/game.js"
 
 {% endblock%}

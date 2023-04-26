@@ -21,9 +21,12 @@ def route():
     return render_template("contact.html", user=current_user)
 
 @views.route('/quiz')
-@login_required
 def quiz():
     return render_template("quiz.html", user=current_user)
+
+@views.route('/end')
+def end():
+    return render_template("end.html", user=current_user)
 
 @views.route('/secret')
 @login_required
