@@ -28,6 +28,10 @@ def quiz():
 def end():
     return render_template("end.html", user=current_user)
 
+@views.route('/hiscores')
+def hiscores():
+    return render_template("hiscores.html", user=current_user)
+
 @views.route('/secret')
 @login_required
 def secret():

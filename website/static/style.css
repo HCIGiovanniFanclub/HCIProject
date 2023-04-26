@@ -13,6 +13,7 @@ body {
   display: flex;
   flex-direction: column;
   height: 100%;
+  background-color: #6a94af;
 }
 .navbar-nav {
   justify-content: left;
