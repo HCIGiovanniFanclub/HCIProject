@@ -157,3 +157,57 @@ input::placeholder {
   box-shadow: none;
   transform: none;
 }
+#highscores .btn {
+  display: inline-block;
+  font-size: 1.8rem;
+  width: 20rem;
+  text-align: center;
+  border: 2px solid orange;
+  color: orange;
+  background-color: #183445;
+  display: inline-block;
+  padding: 10px 20px;
+  color: orange;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  margin-top: 15px;
+  transition: 0.3s ease background-color;
+  transition-property: background-color, color;
+}
+#highscores h1 {
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
+    1px 1px 0 #000;
+}
+#highscores .btn:hover {
+  cursor: pointer;
+  box-shadow: 0 0.4rem 1.4rem 0 orange;
+  transform: translateY(-0.1rem);
+  transition: transform 150ms;
+  color: white;
+  background-color: orange;
+}
+
+#highscores .btn[disabled]:hover {
+  cursor: not-allowed;
+  box-shadow: none;
+  transform: none;
+}
+
+#highscoreslist {
+  list-style: none;
+  padding-left: 0;
+  margin-bottom: 4 rem;
+}
+
+.high-score {
+  font-size: 2.8rem;
+  margin-bottom: 0.5rem;
+  display: flex;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
+    1px 1px 0 #000;
+  color: orange;
+}
+
+.high-score:hover {
+  transform: scale(1.025);
+}
