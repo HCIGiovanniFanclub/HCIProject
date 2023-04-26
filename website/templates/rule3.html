@@ -1,35 +1,30 @@
 {% extends "base.html"%} {% block title %} Rule 3 {% endblock %} {%block content
 %}
-<h2 align="center">Rule 3: Offer Informative Feedback</h2>
-<hr
-  style = "
-  border:none;
-  color:rgb(1, 1, 26);
-  background-color:rgb(11, 1, 52);
-  color:rgb(3, 41, 56); 
-  height:10px; 
-  width:device-width;
-  
-
-  "
->
-<p align="left" style="font-size:22px;width:1100px;height:300px;margin-top:50px">
-  <img src="../static/rule3Example.png" alt="testing" style="float:left;width:400px;height:300px;margin-right:100px;">
-  The user should know where they are at and what is
-  going on at all times. For every action there should be appropriate,
-  human-readable feedback within a reasonable amount of time. A good example of
-  applying this would be to indicate to the user where they are at in the
-  process when working through a multi-page questionnaire. A bad example we
-  often see is when an error message shows an error-code instead of a
-  human-readable and meaningful message.
-</p>
-
-
-<div style="position:relative;bottom:5%">
-  <a href="/rule2" class="btn btn-primary">Previous Rule</a>
-  <a href="/rule4" class="btn btn-primary">Next Rule</a>
-  <a href="/rule3bad" class="btn btn-primary">Bad Example</a>
+<link
+  rel="stylesheet"
+  type="text/css"
+  href="{{ url_for('static', filename='rule.css')}}"
+/>
+<div id="rulecontainer">
+  <div class="ruletext">
+    <h2>Rule 3: Offer Informative Feedback</h2>
+    <hr />
+    <p>
+      <img src="../static/rule3Example.png" id="exampleimage" />
+      The user should know where they are at and what is going on at all times.
+      For every action there should be appropriate, human-readable feedback
+      within a reasonable amount of time. A good example of applying this would
+      be to indicate to the user where they are at in the process when working
+      through a multi-page questionnaire. A bad example we often see is when an
+      error message shows an error-code instead of a human-readable and
+      meaningful message.
+    </p>
+    <div id="btnitem">
+      <a href="/rule2" class="btn">Previous Rule</a>
+      <a href="/rule4" class="btn">Next Rule</a>
+      <a href="/rule3bad" class="btn">Bad Example</a>
+    </div>
+  </div>
 </div>
-
 
 {% endblock%}

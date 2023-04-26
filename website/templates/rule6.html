@@ -1,30 +1,26 @@
-{% extends "base.html"%} {% block title %} Rule 8 {% endblock %} {%block content
+{% extends "base.html"%} {% block title %} Rule 3 {% endblock %} {%block content
 %}
-<h2 align="center">Rule 6: Permit Easy Reversal of Actions</h2>
-<hr
-  style = "
-  border:none;
-  color:rgb(1, 1, 26);
-  background-color:rgb(11, 1, 52);
-  color:rgb(3, 41, 56); 
-  height:10px; 
-  width:device-width;
-  
-
-  "
->
-<p align="left" style="font-size:x-large;width:1100px;height:300px;margin-top:50px">
-  <img src="../static/rule6Example.png" alt="testing" style="float:left;width:400px;height:250px;margin-right:100px;">
-  Designers should aim to offer users obvious
-  ways to reverse their actions. These reversals should be permitted at various
-  points whether it occurs after a single action, a data entry or a whole
-  sequence of actions.
-</p>
-
-<div style="position:relative;bottom:5%">
-  <a href="/rule5" class="btn btn-primary">Previous Rule</a>
-  <a href="/rule7" class="btn btn-primary">Next Rule</a>
-  <a href="/rule6bad" class="btn btn-primary">Bad Example</a>
+<link
+  rel="stylesheet"
+  type="text/css"
+  href="{{ url_for('static', filename='rule.css')}}"
+/>
+<div id="rulecontainer">
+  <div class="ruletext">
+    <h2>Rule 6: Permit Easy Reversal of Actions</h2>
+    <hr />
+    <p>
+      <img src="../static/rule6Example.png" id="exampleimage" />
+      Designers should aim to offer users obvious ways to reverse their actions.
+      These reversals should be permitted at various points whether it occurs
+      after a single action, a data entry or a whole sequence of actions.
+    </p>
+    <div id="btnitem">
+      <a href="/rule5" class="btn">Previous Rule</a>
+      <a href="/rule7" class="btn">Next Rule</a>
+      <a href="/rule6bad" class="btn">Bad Example</a>
+    </div>
+  </div>
 </div>
 
 {% endblock%}

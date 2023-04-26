@@ -1,32 +1,30 @@
-{% extends "base.html"%} {% block title %} Rule 4 {% endblock %} {%block content
+{% extends "base.html"%} {% block title %} Rule 3 {% endblock %} {%block content
 %}
-<h2 align="center">Rule 4: Design Dialog to Yield Closure</h2>
-<hr
-  style = "
-  border:none;
-  color:rgb(1, 1, 26);
-  background-color:rgb(11, 1, 52);
-  color:rgb(3, 41, 56); 
-  height:10px; 
-  width:device-width;
-  
-
-  "
->
-<p align="left" style="font-size:x-large;width:1100px;height:300px;margin-top:50px">
-  <img src="../static/rule4Example.jpg" alt="testing" style="float:left;width:150px;height:250px;margin-right:100px;">
-  Don’t keep your users guessing. Tell them
-  what their action has led them to. For example, users would appreciate a
-  “Thank You” message and a proof of purchase receipt when they’ve completed an
-  online purchase. An example is the screen once you send money on CashApp. 
-  After you send money a green circle with a checkmark will appear letting the 
-  user know the payment sent. It will also tell the user how much and to who they
-  sent the money to. 
-</p>
-<div style="position:relative;bottom:5%">
-  <a href="/rule3" class="btn btn-primary">Previous Rule</a>
-  <a href="/rule5" class="btn btn-primary">Next Rule</a>
-  <a href="/rule4bad" class="btn btn-primary">Bad Example</a>
+<link
+  rel="stylesheet"
+  type="text/css"
+  href="{{ url_for('static', filename='rule.css')}}"
+/>
+<div id="rulecontainer">
+  <div class="ruletext">
+    <h2>Rule 4: Design Dialog to Yield Closure</h2>
+    <hr />
+    <p>
+      <img src="../static/rule4Example.jpg" id="exampleimage" />
+      Don’t keep your users guessing. Tell them what their action has led them
+      to. For example, users would appreciate a “Thank You” message and a proof
+      of purchase receipt when they’ve completed an online purchase. An example
+      is the screen once you send money on CashApp. After you send money a green
+      circle with a checkmark will appear letting the user know the payment
+      sent. It will also tell the user how much and to who they sent the money
+      to.
+    </p>
+    <div id="btnitem">
+      <a href="/rule3" class="btn">Previous Rule</a>
+      <a href="/rule5" class="btn">Next Rule</a>
+      <a href="/rule4bad" class="btn">Bad Example</a>
+    </div>
+  </div>
 </div>
 
 {% endblock%}
