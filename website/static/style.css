@@ -4,6 +4,24 @@
   margin: 0;
   box-sizing: border-box;
 }
+.title-text h2 {
+  border-bottom: 4px solid #222;
+}
+.contact-title span {
+  color: orange;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
+    1px 1px 0 #000;
+}
+.title-text mb50 h2 span {
+  color: orange;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
+    1px 1px 0 #000;
+}
+.title-text h2 span {
+  color: orange;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
+    1px 1px 0 #000;
+}
 html {
   height: 100%;
   font-size: 14px;
